@@ -4118,7 +4118,7 @@ async function run() {
 
         await exec.exec(`${src}/git_update.sh -v ${versionType}`);
     } catch (error) {
-
+        core.setFailed(error.message);
     }
 }
 

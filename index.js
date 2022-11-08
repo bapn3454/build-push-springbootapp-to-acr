@@ -1,5 +1,5 @@
 const core = require('@actions/core');
-const exec = require('@actions/exec');
+const exec = require("@actions/exec");
 
 async function run() {
     try {
@@ -8,7 +8,7 @@ async function run() {
 
         await exec.exec(`${src}/git_update.sh -v ${versionType}`);
     } catch (error) {
-
+        core.setFailed(error.message);
     }
 }
 
