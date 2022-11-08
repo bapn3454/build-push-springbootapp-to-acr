@@ -1,0 +1,14 @@
+---
+name: Build Push SpringBoot to ACR
+description: Build Docker image from Spring Boot application and Push it to Azure Container Registery (ACR) 
+inputs:
+  version-type:
+    description: Provide version type // TO CHANGE
+    required: true
+    default: patch
+outputs:
+  new-version:
+    description: Incremented version
+runs:
+  using: node12
+  main: action/index.js

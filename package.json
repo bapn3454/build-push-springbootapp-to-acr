@@ -1,0 +1,25 @@
+{
+  "name": "build-push-springbootapp-to-acr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bapn3454/build-push-springbootapp-to-acr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bapn3454/build-push-springbootapp-to-acr/issues"
+  },
+  "homepage": "https://github.com/bapn3454/build-push-springbootapp-to-acr#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "@vercel/ncc": "^0.34.0"
+  }
+}
