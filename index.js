@@ -1,6 +1,7 @@
 const core = require('@actions/core');
 const exec = require("@actions/exec");
 
+//test
 async function run() {
     try {
         const versionType = core.getInput('version-type');
